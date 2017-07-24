@@ -1,5 +1,5 @@
 package Iniciante.salariosBonus;
-
+import Iniciante.excecoes.MenorQue0Exception;;;
 public class SalarioBonus {
 	
 	private String nome;

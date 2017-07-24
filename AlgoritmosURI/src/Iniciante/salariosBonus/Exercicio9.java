@@ -1,6 +1,7 @@
 package Iniciante.salariosBonus;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import Iniciante.excecoes.MenorQue0Exception;;;
 public class Exercicio9 {
 	
 	public static void main(String[] args){
