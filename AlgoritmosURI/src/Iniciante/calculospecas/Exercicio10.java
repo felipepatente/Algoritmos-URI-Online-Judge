@@ -3,6 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import Iniciante.excecoes.MenorQue0Exception;
+import Iniciante.utilidades.Util;
 public class Exercicio10 {
 	
 	public static void main(String[] args){
@@ -40,10 +41,8 @@ public class Exercicio10 {
 		
 		}catch (InputMismatchException e) {
 			
-			System.out.println("ERROR: Um dos motivos pode ser um dos itens abaixos:\n"
-					+ "1 - Só é permitido a entrada de números. \n"
-					+ "2 - Se for necessário colocar casas decimais, separ por virgulas\n"
-					+ "3 - Digite números inteiros nos códigos e nas quantidades das peças");
+			Util util = new Util();
+			System.out.println(util.getMensagemInput());
 			
 		}catch(MenorQue0Exception e){
 			System.out.println("ERROR: " + e.getMessage());
