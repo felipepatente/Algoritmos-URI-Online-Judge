@@ -2,7 +2,7 @@ package Iniciante.calculospecas;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import Iniciante.excecoes.MenorQue0Exception;
+import Iniciante.excecoes.MenorOuIgual0Exception;
 import Iniciante.utilidades.Util;
 public class Exercicio10 {
 	
@@ -42,9 +42,10 @@ public class Exercicio10 {
 		}catch (InputMismatchException e) {
 			
 			Util util = new Util();
-			System.out.println(util.getMensagemInput());
+			System.out.println(util.getMensagemInput() + 
+					"\n3 - Digite números inteiros nos códigos e nas quantidades das peças");
 			
-		}catch(MenorQue0Exception e){
+		}catch(MenorOuIgual0Exception e){
 			System.out.println("ERROR: " + e.getMessage());
 		}catch(Exception e){
 			System.out.println("ERROR: " + e.getMessage());

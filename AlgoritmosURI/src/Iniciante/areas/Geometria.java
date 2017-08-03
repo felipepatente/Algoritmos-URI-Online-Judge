@@ -1,6 +1,6 @@
 package Iniciante.areas;
 
-import Iniciante.excecoes.MenorQue0Exception;
+import Iniciante.excecoes.MenorOuIgual0Exception;
 
 public class Geometria {
 	
@@ -8,14 +8,14 @@ public class Geometria {
 	private double valor2;
 	private double valor3;
 	
-	public Geometria(double valor1, double valor2, double valor3)throws MenorQue0Exception{
+	public Geometria(double valor1, double valor2, double valor3)throws MenorOuIgual0Exception{
 		this.validarValores(valor1, valor2, valor3);
 	}
 	
-	public void validarValores(double valor1, double valor2, double valor3)throws MenorQue0Exception{
+	public void validarValores(double valor1, double valor2, double valor3)throws MenorOuIgual0Exception{
 		
 		if(valor1 < 0 || valor2 < 0 || valor3 < 0){
-			throw new MenorQue0Exception();
+			throw new MenorOuIgual0Exception();
 		}
 		
 		this.valor1 = valor1;

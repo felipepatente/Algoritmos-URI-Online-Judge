@@ -1,7 +1,7 @@
 package Iniciante.salariosBonus;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import Iniciante.excecoes.MenorQue0Exception;;;
+import Iniciante.excecoes.MenorOuIgual0Exception;;;
 public class Exercicio9 {
 	
 	public static void main(String[] args){
@@ -29,7 +29,7 @@ public class Exercicio9 {
 			System.out.println("ERROR: Só é permitido a entrada de números. "
 					+ "Se for necessário colocar casas decimais, separ por virgulas");
 			
-		}catch(MenorQue0Exception e){
+		}catch(MenorOuIgual0Exception e){
 			System.out.println("ERROR: " + e.getMessage());
 			
 		}catch (Exception e) {

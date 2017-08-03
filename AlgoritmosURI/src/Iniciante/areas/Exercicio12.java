@@ -1,7 +1,7 @@
 package Iniciante.areas;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
-import Iniciante.excecoes.MenorQue0Exception;
+import Iniciante.excecoes.MenorOuIgual0Exception;
 import Iniciante.utilidades.Util;
 
 public class Exercicio12 {
@@ -25,7 +25,7 @@ public class Exercicio12 {
 												"QUADRADO: " + df.format(geometria.getQuadrado()) + "\n" +
 												"RETANGULO: " + df.format(geometria.getRetangulo()));
 			
-		}catch(MenorQue0Exception e){
+		}catch(MenorOuIgual0Exception e){
 			JOptionPane.showMessageDialog(null,"ERROR: " + e.getMessage());
 		}catch (NumberFormatException e) {
 			Util util = new Util();

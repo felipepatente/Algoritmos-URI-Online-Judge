@@ -2,7 +2,7 @@ package Iniciante.esferas;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import Iniciante.excecoes.MenorQue0Exception;
+import Iniciante.excecoes.MenorOuIgual0Exception;
 import Iniciante.utilidades.Util;
 public class Exercicio11 {
 		
@@ -25,7 +25,7 @@ public class Exercicio11 {
 			Util util = new Util();
 			System.out.println(util.getMensagemInput());
 			
-		}catch (MenorQue0Exception e) {
+		}catch (MenorOuIgual0Exception e) {
 			System.out.println(e.getMessage());
 		} catch (Exception e) {
 			System.out.println("ERROR: " + e.getMessage());

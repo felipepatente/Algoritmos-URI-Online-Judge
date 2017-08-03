@@ -1,5 +1,5 @@
 package Iniciante.salariosBonus;
-import Iniciante.excecoes.MenorQue0Exception;;;
+import Iniciante.excecoes.MenorOuIgual0Exception;;;
 public class SalarioBonus {
 	
 	private String nome;
@@ -11,19 +11,19 @@ public class SalarioBonus {
 		this.nome = nome;
 	}
 	
-	public void setSalarioFixo(double salarioFixo) throws MenorQue0Exception {
+	public void setSalarioFixo(double salarioFixo) throws MenorOuIgual0Exception {
 		
 		if(salarioFixo <= 0){
-			throw new MenorQue0Exception();
+			throw new MenorOuIgual0Exception();
 		}
 		
 		this.salarioFixo = salarioFixo;
 	}
 	
-	public void setTotVendas(double totVendas) throws MenorQue0Exception{
+	public void setTotVendas(double totVendas) throws MenorOuIgual0Exception{
 		
 		if(totVendas <= 0){
-			throw new MenorQue0Exception();
+			throw new MenorOuIgual0Exception();
 		}
 		
 		this.totVendas = totVendas;
